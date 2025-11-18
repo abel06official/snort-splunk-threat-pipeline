@@ -17,8 +17,7 @@ I designed a three-node environment to simulate a corporate network under siege:
 2.  **The Shield:** An Ubuntu Server running Snort 2 in NIDS mode.
 3.  **The Brain:** A Windows Analyst Station running Splunk Enterprise.
 
-![Network Architecture Diagram](snapshots/network_diagram.png)
-*(Placeholder: Architecture Diagram)*
+![Network Architecture Diagram](images/diagram.png)
 
 ---
 
@@ -60,7 +59,7 @@ Using **Kali Linux**, I utilized `Nmap` to launch a stealth scan against the sen
 # Executing a Stealth SYN Scan against the target
 sudo nmap -sS -v 192.168.1.xxx
 ```
-
+![image](images/Screenshot1.png)
 ### Phase B: The Detection
 
 Snort immediately picked up the traffic. The console output confirmed that **Rule SID 1000002** was triggered multiple times.
