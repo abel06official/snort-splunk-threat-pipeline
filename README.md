@@ -63,6 +63,7 @@ sudo nmap -sS -v 192.168.1.xxx
 ### Phase B: The Detection
 
 Snort immediately picked up the traffic. The console output confirmed that **Rule SID 1000002** was triggered multiple times.
+![image](images/Screenshot6.png)
 
 ### Phase C: The Visualization
 
