@@ -1,0 +1,15 @@
+# ----------------
+# SNORT CONFIGURATION SNIPPET
+# ----------------
+# Shows the critical variable changes made to protect the host.
+
+# Define the Internal Network (Protected Assets)
+# Replace with actual IP range of the sensor
+ipvar HOME_NET 192.168.x.x
+
+# Define External Network (The Wild)
+# Everything that is NOT the Home Net is considered External
+ipvar EXTERNAL_NET !$HOME_NET
+
+# Path to the Local Rules file
+include $RULE_PATH/local.rules
