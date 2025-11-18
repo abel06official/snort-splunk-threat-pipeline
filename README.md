@@ -73,13 +73,14 @@ Using **Regular Expressions (Regex)**, I extracted it dynamically.
 ```bash
 source="/var/log/snort/alert" | rex "\] (?<threat_name>[^\[]+) \[\*\*\]" | top threat_name
 ```
+![image](images/Screenshot4.png)
 **Technical Note**  
 The `rex` command looks for text specifically between the brackets `[* *]` to isolate the human-readable alert name. This extraction pattern targets the message portion Snort places between the `[** ... **]` delimiters so that the `threat_name` field can be created at search time.
 
 ---
 
 ### Final Dashboard
-*(Placeholder: Screenshot of Pie Chart)*
+![image](images/Screenshot3.png)
 
 ---
 
