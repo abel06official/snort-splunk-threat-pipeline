@@ -1,0 +1,2 @@
+# Query for parsing Snort Logs and extracting Threat Names
+source="/var/log/snort/alert" | rex "\] (?<threat_name>[^\[]+) \[\*\*\]" | top threat_name
