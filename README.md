@@ -59,7 +59,7 @@ Using **Kali Linux**, I utilized `Nmap` to launch a stealth scan against the sen
 # Executing a Stealth SYN Scan against the target
 sudo nmap -sS -v 192.168.1.xxx
 ```
-![image](images/Screenshot1.png)
+![image](images/Screenshot7.png)
 ### Phase B: The Detection
 
 Snort immediately picked up the traffic. The console output confirmed that **Rule SID 1000002** was triggered multiple times.
